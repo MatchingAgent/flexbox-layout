@@ -44,7 +44,7 @@ install {
             }
             developers {
                 developer {
-                    name 'Google'
+                    name 'Tapple'
                 }
             }
         }

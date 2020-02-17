@@ -18,11 +18,9 @@ ext {
     projectName = 'flexbox-layout'
     projectDesc = 'Flexbox for Android'
 
-    githubUrl = 'https://github.com/google/flexbox-layout'
+    githubUrl = 'https://github.com/MatchingAgent/flexbox-layout'
 
-    mavenGroup = 'com.google.android'
+    mavenGroup = 'jp.co.matchingagent.cocotsure.flexbox'
     mavenArtifactId = 'flexbox'
     mavenVersion = '2.0.1'
-
-    bintrayOrg = 'google'
 }
