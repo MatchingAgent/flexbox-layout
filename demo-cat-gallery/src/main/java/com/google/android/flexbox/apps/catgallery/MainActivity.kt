@@ -20,10 +20,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.flexbox.AlignItems
-import com.google.android.flexbox.FlexDirection
-import com.google.android.flexbox.FlexWrap
-import com.google.android.flexbox.FlexboxLayoutManager
+import jp.co.matchingagent.cocotsure.flexbox.AlignItems
+import jp.co.matchingagent.cocotsure.flexbox.FlexDirection
+import jp.co.matchingagent.cocotsure.flexbox.FlexWrap
+import jp.co.matchingagent.cocotsure.flexbox.FlexboxLayoutManager
 
 /**
  * Launcher Activity for the cat gallery demo app that demonstrates the usage of the

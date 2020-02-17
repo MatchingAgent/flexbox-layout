@@ -15,7 +15,7 @@
   limitations under the License.
   -->
 <manifest
-    package="com.google.android.flexbox.test"
+    package="jp.co.matchingagent.cocotsure.flexbox.test"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>

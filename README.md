@@ -30,7 +30,7 @@ There are two ways of using Flexbox in your layout.
 The first one is `FlexboxLayout` that extends the `ViewGroup` like `LinearLayout` and `RelativeLayout`.
 You can specify the attributes from a layout XML like:
 ```xml
-<com.google.android.flexbox.FlexboxLayout
+<jp.co.matchingagent.cocotsure.flexbox.FlexboxLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -59,7 +59,7 @@ You can specify the attributes from a layout XML like:
         android:layout_height="80dp"
         app:layout_alignSelf="flex_end"
         />
-</com.google.android.flexbox.FlexboxLayout>
+</jp.co.matchingagent.cocotsure.flexbox.FlexboxLayout>
 ```
 
 Or from code like:
@@ -217,7 +217,7 @@ Here is a quick overview of the attributes/features comparison between the two i
   
   `res/layout/content_main.xml`
   ```xml
-  <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <jp.co.matchingagent.cocotsure.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
