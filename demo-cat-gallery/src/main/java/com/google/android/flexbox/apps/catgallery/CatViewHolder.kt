@@ -20,7 +20,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.flexbox.FlexboxLayoutManager
+import jp.co.matchingagent.cocotsure.flexbox.FlexboxLayoutManager
 
 /**
  * ViewHolder that represents a cat image.

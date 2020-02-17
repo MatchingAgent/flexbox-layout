@@ -24,6 +24,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.apps.flexbox.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import jp.co.matchingagent.cocotsure.flexbox.FlexItemAdapter
+import jp.co.matchingagent.cocotsure.flexbox.FlexboxLayoutManager
+import jp.co.matchingagent.cocotsure.flexbox.FragmentHelper
 
 /**
  * Fragment that contains the [RecyclerView] and the [FlexboxLayoutManager] as its

@@ -28,6 +28,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentManager
 import com.google.android.apps.flexbox.R
 import com.google.android.material.navigation.NavigationView
+import jp.co.matchingagent.cocotsure.flexbox.FlexboxLayoutFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
