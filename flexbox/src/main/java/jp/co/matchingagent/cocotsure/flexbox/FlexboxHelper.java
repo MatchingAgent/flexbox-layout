@@ -389,19 +389,22 @@ class FlexboxHelper {
             int crossMeasureSpec, int needsCalcAmount, int fromIndex, int toIndex,
             @Nullable List<FlexLine> existingLines) {
 
-        boolean isMainHorizontal = mFlexContainer.isMainAxisDirectionHorizontal();
-
-        int mainMode = View.MeasureSpec.getMode(mainMeasureSpec);
-        int mainSize = View.MeasureSpec.getSize(mainMeasureSpec);
-
-        int childState = 0;
-
         List<FlexLine> flexLines;
         if (existingLines == null) {
             flexLines = new ArrayList<>();
         } else {
             flexLines = existingLines;
         }
+        if (mFlexContainer.getMaxLine() != NOT_SET && mFlexContainer.getMaxLine() == flexLines.size()) {
+            return;
+        }
+
+        boolean isMainHorizontal = mFlexContainer.isMainAxisDirectionHorizontal();
+
+        int mainMode = View.MeasureSpec.getMode(mainMeasureSpec);
+        int mainSize = View.MeasureSpec.getSize(mainMeasureSpec);
+
+        int childState = 0;
 
         result.mFlexLines = flexLines;
 
@@ -551,6 +554,9 @@ class FlexboxHelper {
                     }
                 }
 
+                if (mFlexContainer.getMaxLine() != NOT_SET && mFlexContainer.getMaxLine() == flexLines.size()) {
+                    break;
+                }
                 flexLine = new FlexLine();
                 flexLine.mItemCount = 1;
                 flexLine.mMainSize = mainPaddingStart + mainPaddingEnd;
@@ -873,12 +879,6 @@ class FlexboxHelper {
             return true;
         }
         if (mode == View.MeasureSpec.UNSPECIFIED) {
-            return false;
-        }
-        int maxLine = mFlexContainer.getMaxLine();
-        // Judge the condition by adding 1 to the current flexLinesSize because the flex line
-        // being computed isn't added to the flexLinesSize.
-        if (maxLine != NOT_SET && maxLine <= flexLinesSize + 1) {
             return false;
         }
         int decorationLength =
