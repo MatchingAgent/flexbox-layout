@@ -1003,7 +1003,7 @@ class FlexboxHelper {
             // Prevents ArrayIndexOutOfBoundsException occurring at the beginning of the following 'for loop'
             // TODO Determine when exactly the index becomes NO_POSITION
             if (flexLineIndex == NO_POSITION) {
-                flexLineIndex = 0;
+                return;
             }
         }
         List<FlexLine> flexLines = mFlexContainer.getFlexLinesInternal();
