@@ -1628,6 +1628,11 @@ class FlexboxHelper {
             int flexLineIndex = 0;
             if (mIndexToFlexLine != null) {
                 flexLineIndex = mIndexToFlexLine[fromIndex];
+                // Prevents ArrayIndexOutOfBoundsException occurring at the beginning of the following 'for loop'
+                // TODO Determine when exactly the index becomes NO_POSITION
+                if (flexLineIndex == NO_POSITION) {
+                    return;
+                }
             }
             List<FlexLine> flexLines = mFlexContainer.getFlexLinesInternal();
             for (int i = flexLineIndex, size = flexLines.size(); i < size; i++) {
